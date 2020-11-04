@@ -56,8 +56,8 @@
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgb(192, 181, 181);
   text-align: center;
-  min-width: 400px ;
-  min-height: 600px;
+  min-width: 340px ;
+  min-height: 500px;
   
 }
 div p{
@@ -112,11 +112,10 @@ div form span label:hover{
     font-size: 15px;
     color: white;
     background: linear-gradient(to right bottom, #004E95 50%,#013A6B 50%);
-    box-shadow: 2px 2px grey;
+    box-shadow: 1px 1px grey;
 }
 .submit:hover{
     cursor: pointer;
-    box-shadow: none;
 }
 .bottom{
     background: linear-gradient(to right bottom, #004E95 50%,#013A6B 50%);
@@ -125,7 +124,7 @@ div form span label:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 400px;
+    min-width: 340px;
 }
 a{
     color: white;
