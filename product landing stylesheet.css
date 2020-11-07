@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    
+}
+body{
+      color: #1e306e;
+}
+header{
+    background-image: url(casper11.jpg);
+    height: 600px;
+    width:100%;
+    text-align: center;
+   font-family: 'Oswald', sans-serif; 
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.shopformattresses{
+    text-decoration: none;
+    border: solid 2px;
+    padding: 8px;
+    color: white;
+    background-color: #1e306e;
+}
+
+img{
+    display: block;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    
+    
+}
+div a{
+    display: inline-flex;
+    float: right;
+    text-decoration: none;
+    margin-top: 15px;
+     font-family: 'Oswald', sans-serif; 
+    color: #1e306e;
+   padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: 0.4s ease;
+    margin-right: 8%;
+    
+    
+}
+div a:hover{
+    background-color: #1e306e;
+    color: white
+}
+.review{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+div h2{
+    padding-right: 20%;
+    font-size: 30px;
+ display: inline-flex;
+ margin-top: 2%;
+    
+}
+div footer{
+    
+    font-size: 20px;
+    display: inline-flex;
+    padding-right: 22%;
+    margin-top: 2%;
+}
+.beech{
+    margin-right: 10%;
+}
+.beech1{
+    margin-left: 25%;
+}
+.beech2{
+    margin-left: 25%;
+}

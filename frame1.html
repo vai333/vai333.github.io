@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page Description">
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="survey%20style.css">
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <div>
+            <h1> COVID_19 Survey </h1>
+        </div>
+        <header>
+            <h3> Survey Form</h3>
+            <footer>please fill all fields</footer>
+          
+        </header>
+        <div class="margin">
+            <form>
+                
+                    
+                <p>
+                    <label for="input_text">Name<br></label>
+                    <input id="input_text" type="text" placeholder="Name">
+                </p>
+                   
+                 <p>
+                    <label for="input_email">email-ID<br></label>
+                    <input id="input_email" type="email" placeholder="ID">
+                </p>
+                 <p>
+                    <label for="input_number">Phone number<br></label>
+                    <input id="input_number" type="number" placeholder="NO.">
+                </p>
+                  <p>
+                    <label for="input_number">Family members<br></label>
+                    <input id="input_number" type="number" placeholder="NO.">
+                </p>
+                
+                   <p>
+                    <label for="input_text">Symtoms<br></label>
+                    <input id="input_text" type="text" placeholder="if any symptoms mention.">
+                </p>
+                   
+              
+            </form>
+        </div>
+        <form class="top">
+            <span>
+                <label  for="radio_female">female</label>
+                <input id="radio_female" name="radio" type="radio" checked>
+            </span>
+            <span class="top">
+                 <label for="radio_male">male</label>
+                <input id="radio_male" name="radio" type="radio" checked>
+            </span>
+            
+             <span>
+                 <label for="radio_male">others</label>
+                <input id="radio_male" name="radio" type="radio" checked>
+            </span>
+        </form>
+        <form class="test">
+            <p>did Covid testing</p>
+            <p class="hello">
+                <label for="checkbox_option1">yes</label>
+                <input id="checkbox_option1" name="checkbox" type="checkbox" checked>
+                 <label for="checkbox_option1">no</label>
+                <input id="checkbox_option1" name="checkbox" type="checkbox" checked>
+                
+            </p>
+            
+        </form>
+        <form class="test">
+            <p>
+                <label for="select_class">Yearly income</label>
+                <select id="select_class">
+                        <optgroup label="Primary Income">
+                            <option>1-2 lakh</option>
+                            <option>2-4 lakh</option>
+                            <option>4-6 lakh</option>
+                            <option>6-10lakh</option>
+                            <option>10-15 lakh</option>
+                            <option>above 15 lakh</option>
+                            <option>above 1 cr</option>
+                        </optgroup>
+                </select>
+            </p>
+        </form>
+        <form class="test"><input class="pad" type="submit"  ><input type="reset" value="clear"></form>
+        <br>
+        <br>
+
+        <h1>The td rowspan attribute</h1>
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings for holiday!</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+    <td rowspan="2">$50</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+<br>
+<br>
+<h1>The td colspan attribute</h1>
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sum: $180</td>
+  </tr>
+</table>
+    </body>
+</html>

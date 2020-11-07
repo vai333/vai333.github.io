@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Calculator">
+        <title>calculator</title>
+       
+          <link rel="stylesheet" type="text/css" href="calculator%20styling.css"> 
+        
+    </head>
+    <body>
+        <h1>  Basic Calculator </h1>
+        <div>
+        <form>
+            <input class="int dis" type="text" name="answer" ><br> <br>
+    
+            <input class="margleft col" type="reset" value="c">
+            <input class="margsq" type="button" value="  ^ " onclick="form.answer.value = form.answer.value * form.answer.value" >
+            <input class="margsqrt" type="button" value="  << " onclick="form.answer.value = form.answer.value.substring(0 , form.answer.value.length -1)">
+            <input type= "button" value= "+" onclick="form.answer.value +='+'"><br>
+            <input class="margleft" type="button" value="7" onclick="form.answer.value +='7'">
+            <input type="button" value="8" onclick="form.answer.value +='8'">
+            <input type="button" value="9" onclick="form.answer.value +='9'">
+            <input type="button" value="-" onclick="form.answer.value +='-'"><br>
+            <input class="margleft" type="button" value="4" onclick="form.answer.value +='4'">
+            <input type="button" value="5" onclick="form.answer.value +='5'">
+            <input type="button" value="6" onclick="form.answer.value +='6'">
+            <input type="button" value="*" onclick="form.answer.value +='*'"><br>
+            <input class="margleft" type="button" value="1" onclick="form.answer.value +='1'">
+            <input type="button" value="2" onclick="form.answer.value +='2'">
+            <input type="button" value="3" onclick="form.answer.value +='3'">
+            <input type="button" value="/" onclick="form.answer.value +='/'"><br>
+            <input class="margleft" type="button" value="0" onclick="form.answer.value +='0'">
+            <input type="button" value="." onclick="form.answer.value +='.'">
+            <input class="col" type="button" value="  Answer   ="  onclick="form.answer.value = eval(form.answer.value)">
+         
+    
+            
+            
+            
+            </form>
+        
+        </div>
+     
+    </body>
+</html>
