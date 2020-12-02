@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="LUDOstyle.css">
+        <link rel="stylesheet" href="maincssofludoboard.css">
+        <title>LUDO</title>
+    </head>
+    <body>
+
+   <!-- this is the main popup div section of the game which appears before the game.!-->
+
+       <div id="mainpop" class="popupmain" >
+       <img class="popupimg" src="mainlogo.png">
+       <form class="playernames">
+       <input id="playerone" class="player1" type="text" placeholder="enter name of first player"><br>
+       <input id="playertwo" class="player2" type="text" placeholder="enter name of second player"><br>
+       <input id="playerthree" class="player3" type="text" placeholder="enter name of third player"><br>
+       <input id="playerfour" class="player4" type="text" placeholder="enter name of fourth player"><br>
+       <button id="letsplay" class="play" type="button">PLAY</button>
+       <button class="reset" type="reset">RESET</button>
+       </form>
+       </div>
+       <div class="active" id="overlay"></div>
+    <div class="displaytypeofplayernames">
+       <h3 id="player1onboardname" class="playeroneonboardname"></h3>
+        <h3 id="player2onboardname" class="playertwoonboardname"></h3>
+    </div>
+       <!-- this divison is for the dice-->
+       <div>
+        <audio id="dicesound">
+            <source src="RATTLE2.mp3" type="audio/mpeg">
+        </audio>
+           <h2 id="namedice" class="namedice">DICE</h2>
+        <img src="dice1.png" id="diceimage" class="dice"><br>
+      <button type="button" id="rolldice" class="rolldice">ROLL</button>
+    </div>
+
+ <!-- here comes the main ludo board division of the game.!-->
+
+    <div id="maindivofludoboard" class="mainclassofludoboard">
+        
+        <div id="mainrow1">
+
+            <div  id="row1-column1">
+                <div class="inside">
+                       <div id="red11" class="r1-c1"><img onclick="redpiece1()"  id="redpiece1" class="redpiece"  src="redpiece.jpg"></div>
+                       <div id="red22" class="r1-c1"><img onclick="redpiece2()"  id="redpiece2" class="redpiece"  src="redpiece.jpg"></div><br><br>
+                       <div id="red33" class="r1-c1"><img onclick="redpiece3()"  id="redpiece3" class="redpiece"  src="redpiece.jpg"></div>
+                       <div id="red44" class="r1-c1"><img onclick="redpiece4()"  id="redpiece4" class="redpiece"  src="redpiece.jpg"></div>
+             </div>
+            </div>
+            <div  id="row1-column2">
+                <div id="12" class="steps"></div>
+                <div id="13"  class="steps "></div>
+                <div id="14" class="steps"></div>
+                <div id="11" class="steps"></div>
+                <div id="58" class="steps greenpath"></div>
+                <div id="15" class="steps greenpath onebackpath">&#9728;</div>
+                <div id="10" class="steps onebackpath">&#9728;</div>
+                <div id="59" class="steps greenpath"></div>
+                <div id="16" class="steps "></div>
+                <div id="9" class="steps"></div>
+                <div id="60" class="steps greenpath"></div>
+                <div id="17" class="steps"></div>
+                <div id="8" class="steps"></div>
+                <div id="61" class="steps greenpath"></div>
+                <div id="18" class="steps"></div>
+                <div id="7" class="steps"></div>
+                <div id="62" class="steps greenpath"></div>
+                <div id="19" class="steps"></div>
+
+            </div>
+            <div  id="row1-column3">
+                <div class="inside">
+                    <div id="green11" class="r1-c3"><img onclick="greenpiece1()" id="greenpiece1" class="greenpiece"  src="greenpiece.jpg"></div>
+                    <div id="green22" class="r1-c3"><img onclick="greenpiece2()" id="greenpiece2" class="greenpiece"  src="greenpiece.jpg"></div>
+                    <div id="green33" class="r1-c3"><img onclick="greenpiece3()" id="greenpiece3" class="greenpiece"  src="greenpiece.jpg"></div>
+                    <div id="green44" class="r1-c3"><img onclick="greenpiece4()" id="greenpiece4" class="greenpiece"  src="greenpiece.jpg"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="mainrow2">
+
+            <div  id="row2-column1">
+                <div id="1" class="steps"></div>
+                <div id="2" class="steps  redpath onebackpath">&#9728;</div>
+                <div id="3" class="steps"></div>
+                <div id="4" class="steps"></div>
+                <div id="5" class="steps"></div>
+                <div id="6" class="steps"></div>
+                <div id="52" class="steps"></div>
+                <div id="53" class="steps redpath"></div>
+                <div id="54" class="steps redpath"></div>
+                <div id="55" class="steps redpath"></div>
+                <div id="56" class="steps redpath"></div>
+                <div id="57" class="steps redpath"></div>
+                <div id="51" class="steps"></div>
+                <div id="50" class="steps"></div>
+                <div id="49" class="steps onebackpath ">&#9728;</div>
+                <div id="48" class="steps"></div>
+                <div id="47" class="steps"></div>
+                <div id="46" class="steps"></div>
+            </div>
+            <div  id="row2-column2"></div>
+            <div  id="row2-column3">
+                <div id="20" class="steps "></div>
+                <div id="21" class="steps"></div>
+                <div id="22" class="steps"></div>
+                <div id="23" class="steps onebackpath ">&#9728;</div>
+                <div id="24" class="steps"></div>
+                <div id="25" class="steps"></div>
+                <div id="67" class="steps yellowpath"></div>
+                <div id="66" class="steps yellowpath"></div>
+                <div id="65" class="steps yellowpath"></div>
+                <div id="64" class="steps yellowpath"></div>
+                <div id="63" class="steps yellowpath"></div>
+                <div id="26" class="steps"></div>
+                <div id="32" class="steps"></div>
+                <div id="31" class="steps"></div>
+                <div id="30" class="steps"></div>
+                <div id="29" class="steps"></div>
+                <div id="28" class="steps yellowpath onebackpath">&#9728;</div>
+                <div id="27" class="steps"></div>
+            </div>
+
+        </div>
+
+        <div id="mainrow3">
+
+            <div  id="row3-column1">
+                <div class="inside">
+                    <div id="blue11" class="r3-c1"><img onclick="bluepiece1()" id="bluepiece1" class="bluepiece"  src="bluepiece.jpg"></div>
+                    <div id="blue22" class="r3-c1"><img onclick="bluepiece2()" id="bluepiece2" class="bluepiece"  src="bluepiece.jpg"></div>
+                    <div id="blue33" class="r3-c1"><img onclick="bluepiece3()" id="bluepiece3" class="bluepiece"  src="bluepiece.jpg"></div>
+                    <div id="blue44" class="r3-c1"><img onclick="bluepiece4()" id="bluepiece4" class="bluepiece"  src="bluepiece.jpg"></div>
+                </div>
+            </div>
+            <div  id="row3-column2">
+                <div id="45" class="steps"></div>
+                <div id="72" class="steps bluepath"></div>
+                <div id="33" class="steps"></div>
+                <div id="44" class="steps"></div>
+                <div id="71" class="steps bluepath"></div>
+                <div id="34" class="steps"></div>
+                <div id="43" class="steps"></div>
+                <div id="70" class="steps bluepath"></div>
+                <div id="35" class="steps"></div>
+                <div id="42" class="steps"></div>
+                <div id="69" class="steps bluepath"></div>
+                <div id="36" class="steps onebackpath ">&#9728;</div>
+                <div id="41" class="steps bluepath onebackpath">&#9728;</div>
+                <div id="68" class="steps bluepath"></div>
+                <div id="37" class="steps"></div>
+                <div id="40" class="steps"></div>
+                <div id="39" class="steps"></div>
+                <div id="38" class="steps"></div>
+            </div>
+            <div  id="row3-column3">
+                <div class="inside">
+                    <div id="yellow11" class="r3-c3"><img onclick="yellowpiece1()" id="yellowpiece1" class="yellowpiece" src="yellowpiece.jpg"></div>
+                    <div id="yellow22" class="r3-c3"><img onclick="yellowpiece2()" id="yellowpiece2" class="yellowpiece" src="yellowpiece.jpg"></div>
+                    <div id="yellow33" class="r3-c3"><img onclick="yellowpiece3()" id="yellowpiece3" class="yellowpiece"  src="yellowpiece.jpg"></div>
+                    <div id="yellow44" class="r3-c3"><img onclick="yellowpiece4()" id="yellowpiece4" class="yellowpiece"  src="yellowpiece.jpg"></div>
+                </div>
+            </div>
+
+        </div>
+     
+
+
+    </div>
+   
+
+    <div class="displaytypeofplayernames">
+        <h3 id="player3onboardname" class="playerthreeonboardname"></h3>
+        <h3 id="player4onboardname" class="playerfouronboardname"></h3>
+    </div>
+  
+
+     </body>
+    <script type="text/javascript"  src="jqry/jquery.js"></script>
+    <script type="text/javascript" src="LUDOscript.js"></script>
+</html>
